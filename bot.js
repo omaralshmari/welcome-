@@ -27,7 +27,8 @@ const codes = member.guild.channels.get("473537444214472714");//ايدي الش�
 if(!codes) return;
 if(codes) {
 codes.send(  `${lol[Math.floor(Math.random() * lol.length)]}`);          
-}
+}, 7000);
+
 });
   
 
