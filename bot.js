@@ -30,6 +30,19 @@ codes.send(  `${lol[Math.floor(Math.random() * lol.length)]}`);
 }, 5000)
 }
 });
+A7MD.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+السلام عليكم ياعيني..
+ابيك بموضوع مهم هنا اذا ما عليك أمر !
+
+  [ https://discord.gg/DeSUK8E ] 
+
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
 
 client.login(process.env.BOT_TOKEN); 
